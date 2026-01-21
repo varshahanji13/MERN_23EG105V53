@@ -19,3 +19,39 @@ Tasks:
  {
     console.log("Welcome back!");
 }
+
+/*
+Tasks:
+   1. If price < 500 → "Budget Course"
+   2. If price between 500–1000 → "Standard Course"
+   3. If price > 1000 → "Premium Course"
+   4. Store label in courseTag
+   5. Print the label
+*/
+   let price = 1299;
+   let courseTag = "";
+   if(price < 500){
+      courseTag = "Budget Course";
+   }
+   else if(price >= 500 && price <= 1000){
+
+      courseTag = "Standard Course";
+   }  
+   else{
+      courseTag = "Premium Course";
+   }
+   console.log("Course Tag:", courseTag);
+
+   
+/*
+Tasks:
+   1. If both conditions are true → "Enroll Now"
+   2. Otherwise → "Complete Requirements"
+   3. Use ternary operator
+   4. Store result in enrollMessage
+   5. Print message
+*/
+   let hasPaid = true;
+   let hasCompletedBasics = false;
+   let enrollMessage = (hasPaid === true && hasCompletedBasics === true) ? "Enroll Now" : "Complete Requirements";
+   console.log("Enroll Message:", enrollMessage);
