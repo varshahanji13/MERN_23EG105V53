@@ -1,0 +1,71 @@
+### Get all users
+GET http://localhost:3000/user-api/users
+
+###
+
+### Get all products
+GET http://localhost:3000/product-api/products
+
+###
+
+### Create user
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+[
+  {
+    "id": 100,
+    "name": "Varsha",
+    "age": 20
+  },
+  {
+    "id": 101,
+    "name": "Manu",
+    "age": 18
+  },
+  {
+    "id": 102,
+    "name": "Hema",
+    "age": 22
+  }
+]
+
+###
+
+### Create product
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+  "id": 101,
+  "name": "Curd",
+  "price": 30,
+  "brand": "Amul"
+}
+
+###
+
+### Update user
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+  "id": 100,
+  "name": "Varsha Hanji",
+  "age": 21
+}
+
+###
+
+### Get user by id
+GET http://localhost:3000/user-api/users/100
+
+###
+
+### Get product by id
+GET http://localhost:3000/product-api/products/101
+
+###
+
+### Delete user
+DELETE http://localhost:3000/user-api/users/100
