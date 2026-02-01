@@ -1,0 +1,49 @@
+GET http://localhost:4000/user-api/users
+
+###Create user
+POST  http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"Varsha",
+    "password":"varsh123",
+    "age":20
+}
+
+###Get user by objectID
+GET http://localhost:4000/user-api/users/697dbc9f661e5629e3b89ad7
+
+###
+PUT  http://localhost:4000/user-api/users/697dbc9f661e5629e3b89ad7
+Content-Type: application/json
+
+{
+    "username":"Varsha",
+    "password":"varshaa",
+    "age":20
+}
+
+###
+GET http://localhost:4000/product-api/products
+
+###
+POST  http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":100,
+    "productName":"Milk",
+    "price":30
+}
+
+###
+GET http://localhost:4000/product-api/products/697dcf55e9a92a58653074de
+###
+PUT http://localhost:4000/product-api/products/697dcf55e9a92a58653074de
+Content-Type: application/json
+
+{
+    "pid":100,
+    "productName":"Curd",
+    "price":30
+}
