@@ -39,5 +39,5 @@ app.use("/product-api",productApp)
 
 app.use((err,req,res,next)=>
 {
-    res.status(200).json({message:"error",reason : err.message})
+    res.json({message:"error",reason : err.message})
 })
