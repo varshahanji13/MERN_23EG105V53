@@ -1,0 +1,121 @@
+
+### User Register
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+  "firstName": "Anurag",
+  "lastName": "Sharma",
+  "email": "anurag.user@example.com",
+  "password": "User@12345",
+  "profileImageUrl": "https://example.com/avatars/user.png"
+}
+
+### User Login
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+  "email": "anurag.user@example.com",
+  "password": "User@12345"
+ 
+}
+
+### Author Register
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+  "firstName": "Vikas",
+  "lastName": "Author",
+  "email": "vikas.author@example.com",
+  "password": "Author@12345",
+  "profileImageUrl": "https://example.com/avatars/author.png"
+}
+
+
+### Author Register
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+  "firstName": "test",
+  "lastName": "Author",
+  "email": "test.author@example.com",
+  "password": "testauthor",
+  "profileImageUrl": "https://example.com/avatars/author.png"
+}
+
+### Author Login
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+  "email": "test.author@example.com",
+  "password": "testauthor"
+  
+}
+
+
+
+### Create article (AUTHOR)
+POST http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+  "author":"698abf0bc8d21696fc5c447a",
+  "title":"test2 article",
+  "category":"programming",
+  "content":"content of test2 article"
+}
+
+
+
+###Read articles of a author
+GET http://localhost:4000/author-api/articles/698abf0bc8d21696fc5c447a
+
+
+### Update article (AUTHOR)
+PUT http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+  "author":"698abf0bc8d21696fc5c447a",
+  "articleId":"698acc229abc8b2591474747",
+  "title":"test2 article updated",
+  "category":"programming",
+  "content":"content of test2 article updated"
+}
+
+
+
+### Logout
+GET http://localhost:4000/common-api/logout
+
+
+
+
+### Test res
+GET http://localhost:4000/test
+
+###
+GET http://localhost:4000/hello
+
+
+###changing password
+PUT http://localhost:4000/common-api/change-password
+Content-Type: application/json
+
+{
+  "currentPass": "User@12345",
+  "newPassword": "newpassword456"
+}
+
+###
+POST http://localhost:4000/user-api/articles/comment/698acc229abc8b2591474747
+Content-Type: application/json
+
+{
+  "comment": "Nice article!",
+  "userId": "698ab1e058857c576cdc9804"
+}
