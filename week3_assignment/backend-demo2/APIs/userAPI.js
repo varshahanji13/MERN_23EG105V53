@@ -3,7 +3,7 @@ import exp from "express"
 import { UserModel , ProductModel} from "../models/userModel.js";
 import { hash,compare } from "bcryptjs";
 import jwt from 'jsonwebtoken';
-import { verifyToken } from "../verifyToken.js";
+import { verifyToken } from "../middleware/verifyToken.js";
 
 export const userApp = exp.Router();
 
