@@ -1,0 +1,78 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+nav
+{
+    
+    background-color: rgba(128, 128, 128, 0.329);
+    
+    height:300px ;
+    padding: 80px;
+    
+}
+nav p
+{
+    font-size: 20px;
+    margin: 10px;
+}
+nav h1
+{
+    font-size: 50px;
+    margin: 10px;
+}
+nav button
+{
+    background-color: rgb(113, 113, 218);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    border: none;
+
+
+}
+main
+{
+    display: flex;
+    font-size: 18px; 
+    margin: 100px;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+}
+.card
+{
+    height: 300px;
+    max-width: 700px;
+    margin: 10px;
+
+
+}
+.card button
+{
+    margin-top: 15px;
+    height: 30px;
+    padding: 10px 15px 10px 15px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+   
+}
+.card h5
+{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+footer
+{
+    margin-left: 80px;
+    padding-top: 15px;
+}
