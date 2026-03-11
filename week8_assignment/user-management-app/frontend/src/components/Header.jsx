@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router'
 function Header() {
   return (
-    <div className='flex justify-between bg-gray-100 p-5 px-10 items-center '>
+    <div className='flex justify-between bg-blue-300 p-5 px-10 items-center '>
       <img className='rounded-lg' width="80px" 
-       src='https://i.pinimg.com/564x/8a/01/cc/8a01cc0579be056ecc8dfa2f07bd42aa.jpg' alt=''
+       src='https://static.vecteezy.com/system/resources/previews/025/869/623/non_2x/round-profile-image-of-woman-avatar-for-social-networks-fashion-beauty-blue-and-black-bright-illustration-in-trendy-style-free-vector.jpg' alt=''
       ></img>
       
     <nav>
