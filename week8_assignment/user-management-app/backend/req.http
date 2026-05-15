@@ -1,24 +1,25 @@
-###
+### create user
 
-POST  http://localhost:2000/user-api/users 
+POST http://localhost:4000/user-api/users
 Content-Type: application/json
 
 {
-    "name":"Varsha",
-    "email":"Varsha@gmail.com",
-    "dateofBirth":"2005-04-13",
-    "status":"true"
+    "name":"ab",
+    "email":"abcd@gmail.com",
+    "dateOfBirth":"2005-1-1",
+    "mobileNumber":1234567
 }
 
-###
-GET http://localhost:2000/user-api/users
+### read all users
+GET http://localhost:4000/user-api/users
+
+
+###read a user by id
+GET http://localhost:4000/user-api/users/69a68f8d95416eee05d274f6
+
 
 ###
-
-GET  http://localhost:2000/user-api/users/69a697a2075aa2c6bcfe6c5c
-
-###
-DELETE http://localhost:2000/user-api/users/69a697a2075aa2c6bcfe6c5c
+PUT http://localhost:4000/user-api/users/69a68f8d95416eee05d274f6
 
 ###
-PATCH http://localhost:2000/user-api/users/69a697a2075aa2c6bcfe6c5c
+PATCH  http://localhost:4000/user-api/users/69a68f8d95416eee05d274f6

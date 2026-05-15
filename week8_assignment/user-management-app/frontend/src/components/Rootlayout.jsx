@@ -1,18 +1,19 @@
-import React from 'react'
-import AddUser from './AddUser'
-import Header from './Header'
-import Footer from './Footer'
-import { Outlet } from 'react-router'
-function Rootlayout() {
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import { Outlet } from "react-router";
+import AddUser from "./AddUser";
+
+function RootLayout() {
   return (
-    <div >
-        <Header />
-        <div >
+    <div>
+      <Header />
+      <div className="min-h-screen mx-20 mt-20">
         <Outlet />
-        </div>
-        <Footer />
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Rootlayout
+export default RootLayout;

@@ -14,7 +14,7 @@ function AddUser() {
       setLoading(true);
       // console.log(obj)
 try {
-      let res = await fetch("http://localhost:2000/user-api/users", {
+      let res = await fetch("http://localhost:4000/user-api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -24,7 +24,7 @@ try {
 
       if (res.status === 201) {
         //user created it shd navigate to users list
-        navigate("/userlist");
+        navigate("/userslist");
       } else {
         console.log(res)
         throw new Error("error occurred");
@@ -48,7 +48,7 @@ if (loading) {
  
 
   return (
-    <div className='min-h-screen bg-gradient-to-r from-indigo-100 to-blue-200 flex justify-center items-center'>
+    <div className='min-h-screen  from-indigo-100 to-blue-200 flex justify-center items-center'>
       <div className='bg-white p-20 shadow-md w-80'>
         <h1  className='font-semibold text-2xl'>Add User</h1>
         <form onSubmit={handleSubmit(submitform)}>
@@ -59,20 +59,22 @@ if (loading) {
              }
           </div>
           <div>
-             <input type='text' {...register("email",{required:true})} placeholder='enter email' id='' className='border-2 p-2 mt-2 text-center' />
+             <input type='email' {...register("email",{required:true})} placeholder='enter email' id='' className='border-2 p-2 mt-2 text-center' />
              {
               errors.email?.type==="required" && <p className='text-red-600'>email is required</p>
              }
           </div>
              <div>
-              <input type='date' {...register("dateofBirth",{required:true})} placeholder='dob' id='' className='border-2 p-2 mt-3' />
+              <input type='date' {...register("dateOfBirth",{required:true})} placeholder='dob' id='' className='border-2 p-2 mt-3' />
               {
-                errors.dateofBirth?.type==="required" && <p className='text-red-600'>dob is required</p>
+                errors.dateOfBirth?.type==="required" && <p className='text-red-600'>dob is required</p>
               }
              </div>
              <div className='text-shadow-white'>
-            <button type="submit" className="bg-blue-500 rounded-lg p-3 text-line-100 mt-3">login</button>
-            </div>
+              <button type="submit" className="bg-blue-500 rounded-lg p-3 text-white mt-3">
+              Add User
+              </button>
+              </div>
         </form>
      
     </div>
@@ -80,4 +82,4 @@ if (loading) {
   )
 }
 
-export default AddUser
+export default AddUser;

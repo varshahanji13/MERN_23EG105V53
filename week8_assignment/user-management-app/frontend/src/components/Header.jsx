@@ -1,33 +1,36 @@
-import React from 'react'
-import { NavLink } from 'react-router'
+import { NavLink } from "react-router";
+
 function Header() {
   return (
-    <div className='flex justify-between bg-blue-300 p-5 px-10 items-center '>
-      <img className='rounded-lg' width="80px" 
-       src='https://static.vecteezy.com/system/resources/previews/025/869/623/non_2x/round-profile-image-of-woman-avatar-for-social-networks-fashion-beauty-blue-and-black-bright-illustration-in-trendy-style-free-vector.jpg' alt=''
-      ></img>
-      
-    <nav>
-        <ul className='flex justify-end gap-10 font-semibold  '>
-            <li>
-                <NavLink to="/" className={({isActive})=>isActive ? "text-blue-500": " "}>Home
-                </NavLink>
+    <nav className="flex justify-between px-10 items-center bg-purple-200 py-5">
+      <img className="rounded-full" width="80px" src="https://tse1.mm.bing.net/th/id/OIP.srNFFzORAaERcWvhwgPzVAHaHa?pid=Api&P=0&h=180" alt="" />
+      <ul className="flex gap-6 text-2xl">
+        <li>
+          <NavLink to="/" className={({ isActive }) => (isActive ? "bg-purple-500 text-lime-50 rounded-xl p-2 shadow" : "")}>
+            Home
+          </NavLink>
+        </li>
 
-            </li>
-            <li>
-                <NavLink to="/userlist" className={({isActive})=>isActive ? "text-blue-500": " "}>UserList
-                </NavLink>
+        <li>
+          <NavLink
+            to="/adduser"
+            className={({ isActive }) => (isActive ? "bg-purple-500 text-lime-50 rounded-2xl p-2" : "")}
+          >
+            AddUser
+          </NavLink>
+        </li>
 
-            </li>
-              <li>
-                <NavLink to="/adduser" className={({isActive})=>isActive ? "text-blue-500": " "}>AddUser
-                </NavLink>
-
-              </li>
-        </ul>
+        <li>
+          <NavLink
+            to="/userslist"
+            className={({ isActive }) => (isActive ? "bg-purple-500 text-lime-50 rounded-2xl p-2" : "")}
+          >
+            UsersList
+          </NavLink>
+        </li>
+      </ul>
     </nav>
-    </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

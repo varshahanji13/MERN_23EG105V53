@@ -1,10 +1,10 @@
 import React from 'react'
 import {createBrowserRouter, RouterProvider} from 'react-router'
-import AddUser from './components/AddUser'
-import Home from './components/Home'
-import User from './components/User'
-import Userlist from './components/Userlist'
-import Rootlayout from './components/Rootlayout'
+import AddUser from './components/AddUser.jsx'
+import Home from './components/Home.jsx'
+import User from './components/User.jsx'
+import Userslist from './components/UsersList.jsx'
+import Rootlayout from './components/RootLayout.jsx'
 function App() {
   const routeObj=createBrowserRouter([
     {
@@ -16,8 +16,8 @@ function App() {
       element: <Home />,
     },
     {
-      path: "userlist",
-      element:< Userlist />
+      path: "userslist",
+      element:< Userslist />
     },
     {
       path: "adduser",
@@ -33,4 +33,4 @@ function App() {
   return <RouterProvider router={routeObj} />
 }
 
-export default App
+export default App;
