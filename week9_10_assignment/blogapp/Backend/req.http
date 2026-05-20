@@ -1,0 +1,127 @@
+### User register
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "firstName":"Anju",
+    "lastName":"B",
+    "email":"anju@gmail.com",
+    "password":"abc12345",
+    "profileImageUrl":"https://example.com.avatars.author.png"
+
+}
+
+
+
+### User Login
+POST  http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email":"anju@gmail.com",
+    "password":"abc12345"
+}
+
+
+### Author register
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+    "firstName":"Anusha",
+    "lastName":"P",
+    "email":"Anusha@gmail.com",
+    "password":"abcd",
+    "profileImageUrl":"https://example.com.avatars.author.png"
+}
+
+### Author Login
+POST  http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email":"Anusha@gmail.com",
+    "password":"abcd"    
+}
+
+
+
+### Create Article
+POST http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69afe29c022454c01bc2404d",
+    "title":"t2 article",
+    "category":"programming",
+    "content":"content of t2 article"
+}
+
+
+###Read articles of a author
+GET http://localhost:4000/author-api/articles/69ae881108ae581e3f3eb618
+
+
+### Update article (AUTHOR)
+PUT  http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69ae881108ae581e3f3eb618",
+    "articleId":"69ae8ad4d776712162120ef6",
+    "title":"test1 article",
+    "category":"programming",
+    "content":"content of test 1 article"
+}
+
+
+
+### User Comment to an article
+PUT  http://localhost:4000/user-api/articles
+Content-Type: application/json
+
+{
+    "userId":"69ae881108ae581e3f3eb618",
+    "articleId":"69ae8ad4d776712162120ef6",
+    "comment":"first comment"
+}
+
+
+### Admin Blocks a user
+POST http://localhost:4000/admin-api/blockuser/698ac0e0086ba22f46410905
+Content-Type: application/json
+
+{
+    "userId":"698ab9dfbcc6b95ee0fa6389",
+    "role":"USER"
+}
+
+### Admin Unblock a user
+POST http://localhost:4000/admin-api/unblockuser/698ac0e0086ba22f46410905
+Content-Type: application/json
+
+{
+    "userId":"698ab9dfbcc6b95ee0fa6389",
+    "role":"USER"   
+}
+
+### Change passwords of a user
+PUT http://localhost:4000/common-api/change-password
+Content-Type: application/json
+
+{
+  "email": "Anusha@gmail.com",
+  "currpassword": "abcd",
+  "newpassword": "anusha"
+}
+
+
+### Logout
+GET http://localhost:4000/common-api/logout
+
+
+### Delete an article
+PATCH http://localhost:4000/author-api/articles/69ae8ad4d776712162120ef6/status
+Content-Type: application/json
+
+{ "isArticleActive": true }
