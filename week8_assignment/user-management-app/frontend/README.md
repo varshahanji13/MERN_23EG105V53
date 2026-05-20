@@ -1,16 +1,176 @@
-# React + Vite
+# User Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack User Management application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This application allows users to create, view, update, and delete user records.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new users
+- View all users
+- Update user details
+- Delete users
+- REST API integration
+- MongoDB database connectivity
+- Responsive user interface
+- Backend deployment on Render
+- Frontend deployment on Vercel
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+- HTML
+- CSS
+- JavaScript
+- Bootstrap (if used)
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js
+- Express.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Database
+- MongoDB Atlas
+
+### Deployment
+- Render (Backend)
+- Vercel (Frontend)
+
+## Project Structure
+
+```text
+user-management-app/
+│
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── routes/
+│   ├── models/
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+└── README.md
+```
+
+## Installation
+
+### Clone repository
+
+```bash
+git clone https://github.com/varshahanji13/user-management-app.git
+```
+
+Move into project directory:
+
+```bash
+cd user-management-app
+```
+
+## Backend Setup
+
+Move to backend:
+
+```bash
+cd backend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create `.env` file:
+
+```env
+PORT=4000
+MONGO_URI=your_mongodb_connection_string
+```
+
+Start backend:
+
+```bash
+npm start
+```
+
+## Frontend Setup
+
+Open another terminal:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run frontend:
+
+```bash
+npm run dev
+```
+
+For Create React App:
+
+```bash
+npm start
+```
+
+## API Endpoints
+
+### Get all users
+
+```http
+GET /user-api/users
+```
+
+### Add user
+
+```http
+POST /user-api/users
+```
+
+### Update user
+
+```http
+PUT /user-api/users/:id
+```
+
+### Delete user
+
+```http
+DELETE /user-api/users/:id
+```
+
+
+## Deployment Links
+
+Backend:
+
+```text
+https://user-management-app-2xge.onrender.com
+```
+
+Frontend:
+
+```text
+https://user-management-app-five-mu.vercel.app
+```
+
+## Future Improvements
+
+- User authentication
+- JWT authorization
+- Search functionality
+- Pagination
+- Profile image upload
+- Role-based access control
+
+## Author
+
+Your Name

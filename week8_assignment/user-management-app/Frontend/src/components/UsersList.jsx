@@ -10,7 +10,7 @@ function Userslist() {
   useEffect(() => {
     async function getUsers() {
       try {
-        let res = await fetch("http://localhost:4000/user-api/users", {
+        let res = await fetch("https://user-management-app-2xge.onrender.com/user-api/users", {
           method: "GET",
         });
 
