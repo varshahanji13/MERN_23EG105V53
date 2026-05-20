@@ -40,7 +40,7 @@ function ArticleByID() {
       setLoading(true);
 
       try {
-        const res = await axios.get(`https://blogapp-0y0w.onrender.com/user-api/article/${id}`, { withCredentials: true });
+        const res = await axios.get(`https://mern-23eg105v53.onrender.com/user-api/article/${id}`, { withCredentials: true });
 
         setArticle(res.data.payload);
       } catch (err) {
@@ -70,7 +70,7 @@ function ArticleByID() {
 
     try {
       const res = await axios.patch(
-        `https://blogapp-0y0w.onrender.com/author-api/articles/${id}/status`,
+        `https://mern-23eg105v53.onrender.com/author-api/articles/${id}/status`,
         { isArticleActive: newStatus },
         { withCredentials: true },
       );
@@ -103,7 +103,7 @@ function ArticleByID() {
     //add artcileId
     commentObj.articleId = article._id;
     console.log(commentObj);
-    let res = await axios.put("https://blogapp-0y0w.onrender.com/user-api/articles", commentObj, { withCredentials: true });
+    let res = await axios.put("https://mern-23eg105v53.onrender.com/user-api/articles", commentObj, { withCredentials: true });
     if (res.status === 200) {
       toast.success(res.data.message);
       setArticle(res.data.payload);

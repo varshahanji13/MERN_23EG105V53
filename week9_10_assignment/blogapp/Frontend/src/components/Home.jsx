@@ -32,7 +32,7 @@ function Home() {
       setLoading(true);
 
       try {
-        const res = await axios.get("https://blogapp-0y0w.onrender.com/user-api/articles", {
+        const res = await axios.get("https://mern-23eg105v53.onrender.com/user-api/articles", {
           withCredentials: true,
         });
 

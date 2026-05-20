@@ -1,5 +1,5 @@
 ### User register
-POST http://localhost:4000/user-api/users
+POST https://mern-23eg105v53.onrender.com/user-api/users
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
 
 
 ### User Login
-POST  http://localhost:4000/common-api/login
+POST  https://mern-23eg105v53.onrender.com/common-api/login
 Content-Type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-Type: application/json
 
 
 ### Author register
-POST http://localhost:4000/author-api/users
+POST https://mern-23eg105v53.onrender.com/author-api/users
 Content-Type: application/json
 
 {
@@ -36,7 +36,7 @@ Content-Type: application/json
 }
 
 ### Author Login
-POST  http://localhost:4000/common-api/login
+POST  https://mern-23eg105v53.onrender.com/common-api/login
 Content-Type: application/json
 
 {
@@ -47,7 +47,7 @@ Content-Type: application/json
 
 
 ### Create Article
-POST http://localhost:4000/author-api/articles
+POST https://mern-23eg105v53.onrender.com/author-api/articles
 Content-Type: application/json
 
 {
@@ -59,11 +59,11 @@ Content-Type: application/json
 
 
 ###Read articles of a author
-GET http://localhost:4000/author-api/articles/69ae881108ae581e3f3eb618
+GET https://mern-23eg105v53.onrender.com/author-api/articles/69ae881108ae581e3f3eb618
 
 
 ### Update article (AUTHOR)
-PUT  http://localhost:4000/author-api/articles
+PUT  https://mern-23eg105v53.onrender.com/author-api/articles
 Content-Type: application/json
 
 {
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 
 ### User Comment to an article
-PUT  http://localhost:4000/user-api/articles
+PUT  https://mern-23eg105v53.onrender.com/user-api/articles
 Content-Type: application/json
 
 {
@@ -88,7 +88,7 @@ Content-Type: application/json
 
 
 ### Admin Blocks a user
-POST http://localhost:4000/admin-api/blockuser/698ac0e0086ba22f46410905
+POST https://mern-23eg105v53.onrender.com/admin-api/blockuser/698ac0e0086ba22f46410905
 Content-Type: application/json
 
 {
@@ -97,7 +97,7 @@ Content-Type: application/json
 }
 
 ### Admin Unblock a user
-POST http://localhost:4000/admin-api/unblockuser/698ac0e0086ba22f46410905
+POST https://mern-23eg105v53.onrender.com/admin-api/unblockuser/698ac0e0086ba22f46410905
 Content-Type: application/json
 
 {
@@ -106,7 +106,7 @@ Content-Type: application/json
 }
 
 ### Change passwords of a user
-PUT http://localhost:4000/common-api/change-password
+PUT https://mern-23eg105v53.onrender.com/common-api/change-password
 Content-Type: application/json
 
 {
@@ -117,11 +117,11 @@ Content-Type: application/json
 
 
 ### Logout
-GET http://localhost:4000/common-api/logout
+GET https://mern-23eg105v53.onrender.com/common-api/logout
 
 
 ### Delete an article
-PATCH http://localhost:4000/author-api/articles/69ae8ad4d776712162120ef6/status
+PATCH https://mern-23eg105v53.onrender.com/author-api/articles/69ae8ad4d776712162120ef6/status
 Content-Type: application/json
 
 { "isArticleActive": true }

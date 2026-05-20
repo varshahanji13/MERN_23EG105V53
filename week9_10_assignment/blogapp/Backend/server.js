@@ -13,7 +13,7 @@ config(); //process.env
 //Create express application
 const app = exp();
 //use cors middleware
-app.use(cors({ origin: ["http://localhost:5173","https://blogappproject-hazel.vercel.app",], credentials: true }));
+app.use(cors({ origin: ["http://localhost:5173","https://mern-23-eg-105-v53.vercel.app",], credentials: true }));
 
 //add body parser middleware
 app.use(exp.json());
