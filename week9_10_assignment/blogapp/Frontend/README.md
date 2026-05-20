@@ -25,7 +25,7 @@ The frontend is the client-side interface for a blog application. It is responsi
 
 The frontend is configured for Vercel deployment. The current production deployment is:
 
-https://blogappproject-hazel.vercel.app
+https://mern-23-eg-105-v53.vercel.app/
 
 The file `vercel.json` is used to rewrite all routes to `index.html`, which enables client-side routing on refresh.
 
@@ -74,7 +74,7 @@ npm install
 npm run dev
 ```
 
-Open the local server URL shown in the terminal, usually `http://localhost:5173`.
+Open the local server URL shown in the terminal, usually `http://localhost:4000`.
 
 ### Build for production
 
