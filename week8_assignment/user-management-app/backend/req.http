@@ -1,6 +1,6 @@
 ### create user
 
-POST https://user-management-app-2xge.onrender.com/user-api/users
+POST http://localhost:4000/user-api/users
 Content-Type: application/json
 
 {
@@ -11,15 +11,15 @@ Content-Type: application/json
 }
 
 ### read all users
-GET https://user-management-app-2xge.onrender.com/user-api/users
+GET http://localhost:4000/user-api/users
 
 
 ###read a user by id
-GET https://user-management-app-2xge.onrender.com/user-api/users/69a68f8d95416eee05d274f6
+GET http://localhost:4000/user-api/users/69a68f8d95416eee05d274f6
 
 
 ###
-PUT https://user-management-app-2xge.onrender.com/user-api/users/69a68f8d95416eee05d274f6
+PUT http://localhost:4000/user-api/users/69a68f8d95416eee05d274f6
 
 ###
-PATCH  https://user-management-app-2xge.onrender.com/user-api/users/69a68f8d95416eee05d274f6
+PATCH  http://localhost:4000/user-api/users/69a68f8d95416eee05d274f6
